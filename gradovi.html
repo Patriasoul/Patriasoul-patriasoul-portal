@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Gradovi Hrvatske — upoznaj hrvatske gradove, njihove krajeve, povijest, baštinu, ljude i priče.">
+<meta name="theme-color" content="#111827">
+<title>Gradovi Hrvatske | PatriaSoul</title>
+<link rel="stylesheet" href="/assets/css/portal.css">
+<style>
+.city-search{display:flex;gap:12px;max-width:760px;margin:28px auto 0}.city-search input{width:100%;padding:16px 18px;border:1px solid #d7dce3;border-radius:8px;font:inherit;background:#fff}.city-search input:focus{outline:2px solid #b51f2a;outline-offset:2px}.city-count{margin-top:12px;font-size:.85rem;color:#697386}.city-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:28px}.city-card{display:flex;flex-direction:column;gap:7px;padding:22px;border:1px solid #e2e6eb;border-radius:10px;background:#fff;color:inherit;text-decoration:none;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.city-card:hover{transform:translateY(-2px);border-color:#b51f2a;box-shadow:0 10px 25px rgba(17,24,39,.08)}.city-card span{font-size:.72rem;letter-spacing:.12em;font-weight:800;color:#b51f2a}.city-card strong{font-size:1.15rem}.city-card small{color:#697386}.city-card.is-hidden{display:none}.city-empty{display:none;margin-top:22px;padding:20px;border:1px dashed #cbd2dc;border-radius:8px;text-align:center}.city-empty.show{display:block}@media(max-width:900px){.city-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.city-grid{grid-template-columns:1fr}.city-search{margin-top:20px}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap"><span>🇭🇷 Hrvatska · Gradovi</span><span>Upoznaj Hrvatsku kroz njezine gradove.</span></div></div>
+<header class="site-header"><div class="wrap header-main">
+<a class="brand" href="/index.html"><span class="brand-patria">PATRIA</span><span class="brand-soul">SOUL</span></a>
+<button class="menu" type="button" aria-label="Otvori izbornik">☰</button>
+<nav class="main-nav" aria-label="Glavna navigacija">
+<a href="/index.html">Početna</a><a href="/domovina.html">Domovina</a><a href="/branitelji.html">Branitelji</a><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a><a href="/vjera.html">Vjera</a><a class="active" href="/gradovi.html">Gradovi</a><a href="/vijesti.html">Vijesti</a><a href="/igra.html">Igra</a>
+</nav><div class="header-actions"><a href="/quiz.html">Igraj kviz</a><a class="red" href="/brani-svoj-grad.html">Brani svoj grad</a></div>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div>
+<span class="section-label">PATRIA SOUL · GRADOVI</span>
+<h1>Hrvatska kroz<br><strong>njezine gradove.</strong></h1>
+<p>Gradovi su mjesta u kojima se hrvatska povijest, baština, vjera, gospodarstvo, svakodnevni život i sjećanje susreću. PatriaSoul ih povezuje s pričama koje vrijedi upoznati i sačuvati.</p>
+<div class="hero-buttons"><a class="button primary" href="#gradovi">Istraži gradove</a><a class="button secondary" href="/domovina.html">Istraži Domovinu</a></div>
+</div><aside class="hero-news"><span>GRADOVI HRVATSKE</span><h2>Svaki grad ima svoju priču.</h2><p>Od Zagreba i kontinentalnih gradova do jadranske obale i otoka — upoznaj Hrvatsku kroz prostor u kojem ljudi žive.</p><a href="#gradovi">Otvori katalog →</a></aside></div></section>
+<section class="news-strip"><div class="wrap"><strong>GRADOVI:</strong><a href="#zagreb">Zagreb</a><a href="#kontinentalna">Kontinentalna Hrvatska</a><a href="#jadran">Jadran</a><a href="#slavonija">Slavonija</a><a href="#dalmatinski-gradovi">Dalmacija</a></div></section>
+<section class="content wrap" id="gradovi"><div class="section-head"><div><span class="section-label">KATALOG</span><h2>Upoznaj hrvatske gradove</h2></div><p>Početna gradska baza organizirana je pregledno, a svaka će se gradska stranica dalje povezivati s poviješću, baštinom, vjerom, braniteljima i aktualnostima.</p></div>
+<div class="city-search"><input id="citySearch" type="search" placeholder="Pretraži grad…" aria-label="Pretraži gradove Hrvatske"></div>
+<div class="city-count" id="cityCount" aria-live="polite">Prikazani odabrani gradovi</div>
+<div class="city-grid" id="cityGrid">
+<a class="city-card" id="zagreb" data-city="Zagreb" href="#zagreb"><span>GRAD ZAGREB</span><strong>Zagreb</strong><small>Glavni grad Hrvatske</small></a>
+<a class="city-card" data-city="Samobor" href="#samobor"><span>ZAGREBAČKA ŽUPANIJA</span><strong>Samobor</strong><small>Grad tradicije i izleta</small></a>
+<a class="city-card" data-city="Velika Gorica" href="#velika-gorica"><span>ZAGREBAČKA ŽUPANIJA</span><strong>Velika Gorica</strong><small>Vrata Turopolja</small></a>
+<a class="city-card" data-city="Krapina" href="#krapina"><span>KRAPINSKO-ZAGORSKA</span><strong>Krapina</strong><small>Srce Hrvatskog zagorja</small></a>
+<a class="city-card" data-city="Sisak" href="#sisak"><span>SISAČKO-MOSLAVAČKA</span><strong>Sisak</strong><small>Grad na tri rijeke</small></a>
+<a class="city-card" data-city="Karlovac" href="#karlovac"><span>KARLOVAČKA</span><strong>Karlovac</strong><small>Grad na četiri rijeke</small></a>
+<a class="city-card" data-city="Varaždin" href="#varazdin"><span>VARAŽDINSKA</span><strong>Varaždin</strong><small>Barokni grad</small></a>
+<a class="city-card" data-city="Koprivnica" href="#koprivnica"><span>KOPRIVNIČKO-KRIŽEVAČKA</span><strong>Koprivnica</strong><small>Grad Podravine</small></a>
+<a class="city-card" data-city="Bjelovar" href="#bjelovar"><span>BJELOVARSKO-BILOGORSKA</span><strong>Bjelovar</strong><small>Grad u srcu Bilogore</small></a>
+<a class="city-card" data-city="Rijeka" href="#rijeka"><span>PRIMORSKO-GORANSKA</span><strong>Rijeka</strong><small>Najveća hrvatska luka</small></a>
+<a class="city-card" data-city="Gospić" href="#gospic"><span>LIČKO-SENJSKA</span><strong>Gospić</strong><small>Grad Like</small></a>
+<a class="city-card" data-city="Virovitica" href="#virovitica"><span>VIROVITIČKO-PODRAVSKA</span><strong>Virovitica</strong><small>Grad Podravine i Slavonije</small></a>
+<a class="city-card" data-city="Požega" href="#pozega"><span>POŽEŠKO-SLAVONSKA</span><strong>Požega</strong><small>Grad u Požeškoj kotlini</small></a>
+<a class="city-card" data-city="Slavonski Brod" href="#slavonski-brod"><span>BRODSKO-POSAVSKA</span><strong>Slavonski Brod</strong><small>Grad na Savi</small></a>
+<a class="city-card" data-city="Zadar" href="#zadar"><span>ZADARSKA</span><strong>Zadar</strong><small>Grad mora, baštine i povijesti</small></a>
+<a class="city-card" data-city="Osijek" href="#osijek"><span>OSJEČKO-BARANJSKA</span><strong>Osijek</strong><small>Grad na Dravi</small></a>
+<a class="city-card" data-city="Šibenik" href="#sibenik"><span>ŠIBENSKO-KNINSKA</span><strong>Šibenik</strong><small>Grad tvrđava i katedrale</small></a>
+<a class="city-card" data-city="Vukovar" href="#vukovar"><span>VUKOVARSKO-SRIJEMSKA</span><strong>Vukovar</strong><small>Grad heroj i mjesto sjećanja</small></a>
+<a class="city-card" data-city="Split" href="#split"><span>SPLITSKO-DALMATINSKA</span><strong>Split</strong><small>Grad Dioklecijanove palače</small></a>
+<a class="city-card" data-city="Dubrovnik" href="#dubrovnik"><span>DUBROVAČKO-NERETVANSKA</span><strong>Dubrovnik</strong><small>Grad pod zaštitom UNESCO-a</small></a>
+<a class="city-card" data-city="Pula" href="#pula"><span>ISTARSKA</span><strong>Pula</strong><small>Grad rimske baštine</small></a>
+<a class="city-card" data-city="Čakovec" href="#cakovec"><span>MEĐIMURSKA</span><strong>Čakovec</strong><small>Grad Međimurja</small></a>
+</div><div class="city-empty" id="cityEmpty">Nema grada koji odgovara pretrazi.</div></section>
+<section class="content dark" id="kontinentalna"><div class="wrap"><div class="section-head"><div><span class="section-label">KRAJEVI</span><h2>Gradovi u različitim hrvatskim prostorima</h2></div><p>Gradove promatramo zajedno s njihovim krajem, prirodom, poviješću i ljudima.</p></div><div class="media-grid"><a href="#kontinentalna"><span>CONTINENTALNA HRVATSKA</span><h3>Zagreb i sjever Hrvatske</h3><p>Zagorje, Prigorje, Turopolje, Podravina i Međimurje.</p></a><a href="#slavonija"><span>SLAVONIJA · BARANJA</span><h3>Gradovi uz velike rijeke</h3><p>Osijek, Vukovar, Slavonski Brod, Požega i drugi gradovi istoka Hrvatske.</p></a><a href="#jadran"><span>JADRAN</span><h3>Obala i otoci</h3><p>Rijeka, Zadar, Šibenik, Split, Dubrovnik, Pula i otočni gradovi.</p></a></div></div></section>
+<section class="content wrap"><div class="section-head"><div><span class="section-label">GRADSKA PRIČA</span><h2>Svaki grad povezujemo s cijelom pričom</h2></div><p>Gradske stranice neće biti samo imenik. One trebaju biti ulaz u povijest, baštinu, vjeru, prirodu, sjećanje i život svakoga mjesta.</p></div><div class="card-grid"><a href="/povijest.html"><b>📚 Povijest grada</b><span>Povijesni razvoj, važni događaji i osobe.</span></a><a href="/bastina.html"><b>🏛️ Baština</b><span>Spomenici, arhitektura, običaji i lokalna kultura.</span></a><a href="/vjera.html"><b>✝️ Vjera i sakralna baština</b><span>Crkve, svetišta, procesije i duhovna tradicija.</span></a><a href="/branitelji.html"><b>🇭🇷 Sjećanje</b><span>Branitelji, Domovinski rat i mjesta sjećanja.</span></a></div></section>
+<section class="quote"><div class="wrap"><div class="cross">✝</div><blockquote>„Hrvatsku upoznajemo najbolje kada upoznamo mjesta u kojima njezina priča živi.”</blockquote><cite>PatriaSoul · Gradovi Hrvatske</cite></div></section>
+<section class="manifest content wrap"><span class="section-label">SLUŽBENI PODACI</span><h2>Gradovi moraju biti <em>točno evidentirani.</em></h2><p>Za službeni teritorijalni ustroj PatriaSoul se oslanja na podatke Ministarstva pravosuđa, uprave i digitalne transformacije Republike Hrvatske. Ministarstvo navodi 127 gradova i 428 općina u sustavu lokalne samouprave.</p><div class="hero-buttons"><a class="button primary" href="https://mpudt.gov.hr/gradjani-21417/iz-djelokruga/lokalna-i-podrucna-regionalna-samouprava-24398/popis-zupanija-gradova-i-opcina-24402/24402?lang=hr" target="_blank" rel="noopener">Službeni popis gradova</a><a class="button secondary" href="/domovina.html">Natrag na Domovinu</a></div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><a class="brand" href="/index.html"><span class="brand-patria">PATRIA</span><span class="brand-soul">SOUL</span></a><p>Hrvatska. Povijest. Znanje. Identitet.</p></div><div><h4>Istraži</h4><a href="/domovina.html">Domovina</a><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a><a href="/vjera.html">Vjera</a></div><div><h4>Sjećanje</h4><a href="/branitelji.html">Branitelji</a><a href="/vukovar.html">Vukovar</a></div><div><h4>Mediji</h4><a href="/vijesti.html">Vijesti</a><a href="/video.html">Video</a><a href="/galerija.html">Galerija</a></div><div><h4>Igra</h4><a href="/quiz.html">Hrvatski kviz</a><a href="/brani-svoj-grad.html">Brani svoj grad</a></div></div></footer>
+<script src="/assets/js/portal.js" defer></script>
+<script>
+(function(){const input=document.getElementById('citySearch'),cards=[...document.querySelectorAll('.city-card')],count=document.getElementById('cityCount'),empty=document.getElementById('cityEmpty');function filter(){const q=input.value.trim().toLocaleLowerCase('hr-HR');let n=0;cards.forEach(c=>{const ok=!q||c.dataset.city.toLocaleLowerCase('hr-HR').includes(q);c.classList.toggle('is-hidden',!ok);if(ok)n++;});count.textContent=q?`Pronađeno: ${n}`:'Prikazani odabrani gradovi';empty.classList.toggle('show',n===0)}input.addEventListener('input',filter)})();
+</script>
+</body>
+</html>
