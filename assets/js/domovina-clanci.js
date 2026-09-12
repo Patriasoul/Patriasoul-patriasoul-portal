@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lead: 'Hrvatska se ne čuva samo riječima. Čuva se pamćenjem, vjerom, znanjem, odgovornošću prema obitelji i poštovanjem prema ljudima koji su za njezinu slobodu podnijeli najveću žrtvu.',
       text: 'Od kamenih gradova Jadrana do slavonskih ravnica, od hrvatskih otoka do šuma i planina, ista se priča prenosi iz naraštaja u naraštaj. U toj priči mjesto imaju naši gradovi, sela, crkve, groblja, običaji, jezik i obiteljska sjećanja. Domovina je i ono što smo naslijedili i ono što ćemo ostaviti iza sebe. Zato je čuvati Hrvatsku prije svega čin odgovornosti: upoznati je, poštovati njezinu povijest i graditi njezinu budućnost bez odricanja od vlastitog identiteta.',
       quote: 'Čuvaj ono što ti je povjereno. Pamti one koji su ti omogućili slobodu. Prenesi priču dalje.',
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/DUBROVNIK.jpg'
+      image: 'assets/images/Screenshot_20260812-221006.png'
     },
     '/hrvatska.html': {
       kicker: 'ČUVARI NASLJEĐA · HRVATSKA',
@@ -88,67 +88,28 @@ document.addEventListener('DOMContentLoaded', () => {
       lead: 'Slavonija i Baranja nose snagu zemlje, rijeka, obitelji, vjere i bogate kontinentalne kulture.',
       text: 'Drava, Dunav i Sava oblikuju prostor u kojem su polja, vinogradi i šume stoljećima hranili generacije. Osijek, Vukovar, Đakovo, Vinkovci, Požega i druga mjesta nose slojeve povijesti koji sežu duboko u prošlost. Katedrale, dvorci, tambura, bećarac i tradicijska kuhinja dio su živog identiteta. A sjećanje na Domovinski rat, osobito na žrtvu Vukovara i drugih mjesta, obvezuje nas da slobodu ne uzimamo zdravo za gotovo.',
       quote: 'Ravnica pamti. Rijeke nose priču. Čovjek je dužan ne zaboraviti.',
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kopački_rit_001.jpg'
-    },
-    '/istra.html': {
-      kicker: 'ČUVARI NASLJEĐA · ISTRA',
-      title: 'Kamen, maslina i more — hrvatska Istra',
-      lead: 'Istra u sebi nosi slojeve antičke, srednjovjekovne, kršćanske i moderne baštine te snažan osjećaj pripadnosti prostoru.',
-      text: 'Pula, Rovinj, Poreč, Pazin, Labin i brojni istarski gradići pokazuju koliko se različitih vremena može sačuvati na malom prostoru. Rimska Arena, Eufrazijeva bazilika, srednjovjekovni gradići, glagoljska tradicija, masline, vinogradi i more tvore jedinstvenu kulturnu sliku. Istra je primjer da identitet može biti slojevit, otvoren i snažan istodobno. Čuvati ga znači poznavati povijest, poštovati različitosti i ne izgubiti vezu s vlastitim korijenima.',
-      quote: 'Kamen pamti stoljeća. Čovjek čuva priču.',
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pula_Arena,_Istria,_Croatia.JPG'
-    },
-    '/kvarner-i-primorje.html': {
-      kicker: 'ČUVARI NASLJEĐA · KVARNER I PRIMORJE',
-      title: 'More koje povezuje otoke, gradove i naraštaje',
-      lead: 'Kvarner je prostor pomorske povijesti, otoka, gradova, hodočasničkih mjesta i života usmjerenog prema moru.',
-      text: 'Rijeka, Opatija, Crikvenica i Novi Vinodolski povezuju primorsku svakodnevicu s velikim povijesnim promjenama. Krk, Cres, Lošinj i Rab čuvaju stare gradove, crkve, samostane i pomorske priče. Trsat i druga svetišta podsjećaju da je vjera bila važan dio života ljudi uz more. Kvarner pokazuje kako se otvorenost prema svijetu može spojiti s čvrstim osjećajem pripadnosti vlastitom kraju.',
-      quote: 'More otvara vrata svijetu, ali dom ostaje mjesto kojem se čovjek vraća.',
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kvarner,_Croatia.JPG'
-    },
-    '/dalmacija.html': {
-      kicker: 'ČUVARI NASLJEĐA · DALMACIJA',
-      title: 'Kamen i more pamte više nego što možemo ispričati',
-      lead: 'Dalmacija je prostor drevnih gradova, otoka, svetišta, pomorske tradicije i snažne hrvatske povijesne memorije.',
-      text: 'Od Zadra i Šibenika do Splita i Dubrovnika, hrvatska obala čuva tragove civilizacija koje su se mijenjale, ali i vlastitu kršćansku i hrvatsku priču. Dioklecijanova palača, šibenska katedrala, dubrovačke zidine, stari gradovi otoka i brojna svetišta govore o ljudima koji su stvarali na kamenu i uz more. Dalmacija je također prostor snažnog sjećanja na Domovinski rat i obranu hrvatske slobode. Zato se njezina ljepota ne odvaja od poštovanja prema onima koji su je čuvali.',
-      quote: 'Pod istim nebom pod kojim su naši stari molili i radili, danas imamo odgovornost čuvati ono što su nam ostavili.',
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/DUBROVNIK.jpg'
-    },
-    '/posavina-i-pokuplje.html': {
-      kicker: 'ČUVARI NASLJEĐA · POSAVINA I POKUPLJE',
-      title: 'Rijeke, drvene kuće i sjećanje na ljude uz Savu i Kupu',
-      lead: 'Posavina i Pokuplje čuvaju posebnu tradiciju kontinentalne Hrvatske — od drvene arhitekture do snažnih priča o radu, vjeri i obrani domovine.',
-      text: 'Sisak, Petrinja, Karlovac i okolna mjesta oblikovani su rijekama i životom uz njih. Lonjsko polje, stare kuće, crkve i tradicijski običaji svjedoče o načinu života koji je bio usko vezan uz prirodu. Ovaj je prostor ujedno duboko obilježen ratnim iskustvima i sjećanjem na obranu Hrvatske. Zato njegovo nasljeđe treba promatrati cjelovito: kao kulturu života, ali i kao svjedočanstvo ustrajnosti ljudi koji su ostali uz svoj dom.',
-      quote: 'Rijeka mijenja tok, ali sjećanje naroda ne smije nestati.',
-      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sisak,_pevnost_a_řeka_Kupa.jpg'
+      image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Osijek_-_Tvrđa.jpg'
     }
   };
 
   const article = articles[path];
-  if (!article || document.querySelector('.cuvari-clanak')) return;
+  if (!article) return;
 
-  const footer = document.querySelector('footer');
-  if (!footer) return;
+  const target = document.querySelector('[data-domovina-article]');
+  if (!target) return;
 
-  const section = document.createElement('section');
-  section.className = 'cuvari-clanak';
-  section.innerHTML = `
-    <div class="wrap">
-      <div class="cuvari-clanak-grid">
-        <div class="cuvari-clanak-copy">
-          <p class="eyebrow">${article.kicker}</p>
-          <h2>${article.title}</h2>
-          <p class="cuvari-lead">${article.lead}</p>
-          <p>${article.text}</p>
-          <blockquote>${article.quote}</blockquote>
-          <p class="cuvari-autor">Autor: <strong>Čuvari nasljeđa</strong></p>
-        </div>
-        <figure class="cuvari-clanak-media">
-          <img src="${article.image}" alt="${article.title}" loading="lazy">
-          <figcaption>Čuvari nasljeđa · fotografija Wikimedia Commons</figcaption>
-        </figure>
+  target.innerHTML = `
+    <article class="domovina-article">
+      <div class="domovina-article__media">
+        <img src="${article.image}" alt="${article.title}" loading="lazy">
       </div>
-    </div>`;
-
-  footer.parentNode.insertBefore(section, footer);
+      <div class="domovina-article__content">
+        <div class="domovina-article__kicker">${article.kicker}</div>
+        <h2>${article.title}</h2>
+        <p class="domovina-article__lead">${article.lead}</p>
+        <p>${article.text}</p>
+        <blockquote>${article.quote}</blockquote>
+      </div>
+    </article>
+  `;
 });
