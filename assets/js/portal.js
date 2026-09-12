@@ -64,11 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
       ['Svetišta i hodočašća', '/vjera.html#svetista'],
       ['Obitelj i vjera', '/vjera.html#obitelj']
     ],
-    Gradovi: [
-      ['Gradovi Hrvatske', '/gradovi.html'],
-      ['Istraži gradove', '/gradovi.html#gradovi'],
-      ['Po regijama', '/krajevi-i-geografija.html']
-    ],
     Igra: [
       ['Igra', '/igra.html'],
       ['Hrvatski kviz', '/quiz.html'],
@@ -77,6 +72,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   if (nav) {
+    // Gradovi više nije zasebna stavka glavne navigacije.
+    // Ostaje dostupno kroz podizbornik Domovina.
+    nav.querySelectorAll(':scope > a').forEach(link => {
+      if (link.textContent.trim() === 'Gradovi' || link.getAttribute('href') === '/gradovi.html') {
+        link.remove();
+      }
+    });
+
     nav.querySelectorAll(':scope > a').forEach(link => {
       const label = link.textContent.trim();
       const items = menus[label];
@@ -231,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hero = document.querySelector('.hero');
     if (hero) {
       const heroPhoto = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(photos[0].file)}`;
-      hero.style.backgroundImage = `linear-gradient(120deg,rgba(11,18,32,.96) 0%,rgba(11,18,32,.78) 52%,rgba(124,16,34,.72) 100%),url("${heroPhoto}")`;
+      hero.style.backgroundImage = `linear-gradient(120deg,rgba(11,18,32,.96) 0%,rgba(11,18,32,.78) 52%,rgba(124,16,34,.72) 100%),url(\"${heroPhoto}\")`;
     }
 
     const strip = document.createElement('section');
