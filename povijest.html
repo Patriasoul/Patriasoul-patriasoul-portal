@@ -7,6 +7,20 @@
 <meta name="theme-color" content="#111827">
 <title>Povijest Hrvatske | PatriaSoul</title>
 <link rel="stylesheet" href="/assets/css/portal.css">
+<style>
+.history-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:28px}
+.history-gallery .history-card{overflow:hidden;border:1px solid rgba(17,24,39,.12);background:#fff;box-shadow:0 12px 30px rgba(17,24,39,.08)}
+.history-gallery img{display:block;width:100%;height:230px;object-fit:cover}
+.history-gallery .history-card.tall img{height:310px;object-fit:contain;background:#f3f4f6}
+.history-gallery .history-copy{padding:18px}
+.history-gallery .history-copy span{display:block;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.72;margin-bottom:7px}
+.history-gallery .history-copy h3{margin:0 0 8px;font-size:1.12rem}
+.history-gallery .history-copy p{margin:0;font-size:.92rem;line-height:1.55}
+.history-gallery .history-source{margin-top:10px;font-size:.76rem;opacity:.68}
+.history-period{margin-top:38px}
+@media(max-width:900px){.history-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.history-gallery{grid-template-columns:1fr}.history-gallery img,.history-gallery .history-card.tall img{height:240px}}
+</style>
 </head>
 <body>
 <div class="topline"><div class="wrap"><span>🇭🇷 Hrvatska · Povijest</span><span>Činjenice, sjećanje i razumijevanje.</span></div></div>
@@ -28,11 +42,23 @@
 </div></section>
 <section class="news-strip"><div class="wrap"><strong>ISTRAŽI:</strong><a href="#kronologija">Kronologija</a><a href="#razdoblja">Razdoblja</a><a href="#osobe">Povijesne osobe</a><a href="#domovinski-rat">Domovinski rat</a><a href="#izvori">Izvori</a></div></section>
 
-<section class="content wrap" id="razdoblja"><div class="section-head"><div><span class="section-label">POVIJESNI PREGLED</span><h2>Hrvatska kroz stoljeća</h2></div><p>Svako razdoblje promatramo u njegovu vremenu, prostoru i političkom kontekstu.</p></div>
-<div class="lead-grid">
-<article class="lead-card large"><span>RANI SREDNJI VIJEK</span><h3>Oblikovanje hrvatske države</h3><p>Hrvatski politički prostor oblikovao se tijekom ranoga srednjeg vijeka. U izvorima se pojavljuju hrvatski kneževi, a razvoj kršćanstva, crkvene organizacije i političkih središta postavio je temelje kasnijemu kraljevstvu.</p></article>
-<article class="lead-card"><span>10. STOLJEĆE</span><h3>Tomislav</h3><p>Papa Ivan X. u pismu iz 925. Tomislava naziva kraljem Hrvata. Njegovo se doba povezuje s jačanjem hrvatske države i vojnom snagom Hrvatske.</p></article>
-<article class="lead-card"><span>SREDNJI VIJEK</span><h3>Hrvatsko Kraljevstvo</h3><p>Razdoblje kraljeva, plemstva, crkvenih središta i razvoja gradova obilježilo je hrvatski srednji vijek.</p></article>
+<section class="content wrap" id="razdoblja"><div class="section-head"><div><span class="section-label">POVIJESNI PREGLED</span><h2>Hrvatska kroz stoljeća</h2></div><p>Stvarne arhivske fotografije i povijesna građa sada prate ključna razdoblja. Izvor i status slike navodimo na samoj stranici, bez slanja posjetitelja izvan PatriaSoula.</p></div>
+<div class="history-gallery">
+<article class="history-card tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tomislav%20kralj.jpg" alt="Prikaz kralja Tomislava, povijesna ilustracija iz 1938."><div class="history-copy"><span>RANI SREDNJI VIJEK</span><h3>Tomislav</h3><p>Prikaz kralja Tomislava iz izdanja <em>Hrvatska povijest djedova unuku</em> iz 1938.</p><p class="history-source">Izvor: javno dostupna povijesna građa · Josip Horvat Međimurec · public domain.</p></div></article>
+<article class="history-card tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ljudevit%20Gaj.jpg" alt="Portret Ljudevita Gaja iz 19. stoljeća."><div class="history-copy"><span>1830. – 1848.</span><h3>Hrvatski narodni preporod</h3><p>Portret Ljudevita Gaja, jedne od ključnih osoba hrvatskoga narodnog preporoda.</p><p class="history-source">Izvor: javno dostupna povijesna građa · public domain.</p></div></article>
+<article class="history-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Progla%C5%A1enje%20raskida%20veza%20s%20Austro-Ugarskom.jpg" alt="Objava raskida veza s Austrijom i Ugarskom na Trgu svetog Marka 29. listopada 1918."><div class="history-copy"><span>1918.</span><h3>Raskid veza s Austro-Ugarskom</h3><p>Objava o raskidu državnih veza s Austrijom i Ugarskom na Trgu svetog Marka u Zagrebu, 29. listopada 1918.</p><p class="history-source">Izvor: Muzej grada Zagreba / javno dostupna povijesna građa · public domain.</p></div></article>
+</div></section>
+
+<section class="content wrap history-period"><div class="history-gallery">
+<article class="history-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Zagreb%201941%20trg.jpg" alt="Zagreb, 1941., povijesna fotografija Trga bana Jelačića."><div class="history-copy"><span>1941. – 1945.</span><h3>Drugi svjetski rat</h3><p>Rat, okupacija, NDH, partizanski pokret, progoni i masovni zločini duboko su obilježili hrvatsko društvo.</p><p class="history-source">Izvor: javno dostupna arhivska fotografija · public domain.</p></div></article>
+<article class="history-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sve%C4%8Dili%C5%A1te%20Zagreb%20prosvjed%201918.jpg" alt="Povijesne demonstracije u Zagrebu 1918."><div class="history-copy"><span>1918. – 1941.</span><h3>Između dviju država</h3><p>Razdoblje nakon raspada Austro-Ugarske donijelo je velike političke promjene i nove državne okvire.</p><p class="history-source">Izvor: javno dostupna arhivska fotografija · public domain.</p></div></article>
+<article class="history-card"><img src="https://sabor.hr/sites/default/files/uploads/gallery-image-box/2020-09/sabor_30_5_1990_web.jpg" alt="Konstituiranje prvog demokratski izabranog višestranačkog Sabora 30. svibnja 1990."><div class="history-copy"><span>30. SVIBNJA 1990.</span><h3>Obnova višestranačke demokracije</h3><p>Konstituiranje prvog demokratski izabranog višestranačkog Sabora označilo je jednu od ključnih prijelomnih točaka moderne hrvatske države.</p><p class="history-source">Izvor: Hrvatski sabor · foto Neda Oršolić.</p></div></article>
+</div></section>
+
+<section class="content wrap history-period"><div class="history-gallery">
+<article class="history-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Battle%20of%20Vukovar%2C%20September%20-%20November%201991.jpg" alt="Karta bitke za Vukovar, rujan – studeni 1991."><div class="history-copy"><span>1991.</span><h3>Vukovar i Domovinski rat</h3><p>Vukovar je postao jedan od najvažnijih simbola obrane Hrvatske 1991. Karta prikazuje područje bitke tijekom rujna i studenoga.</p><p class="history-source">Izvor: CIA, javna savezna građa SAD-a · public domain.</p></div></article>
+<article class="history-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Croatian%20War%201991%20Vukovar%20destruction.jpg" alt="Razaranje Vukovara tijekom Domovinskog rata 1991."><div class="history-copy"><span>1991. – 1995.</span><h3>Ratna razaranja i obrana</h3><p>Fotografije ratnih posljedica podsjećaju na cijenu obrane hrvatske neovisnosti i života civilnog stanovništva.</p><p class="history-source">Izvor: javno dostupna fotografija · CC BY-SA 2.0.</p></div></article>
+<article class="history-card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/G2%20Galeb%20captured%20by%20the%20Croats%20during%20operation%20oluja.png" alt="Avion G-2 Galeb zarobljen tijekom operacije Oluja 1995."><div class="history-copy"><span>1995.</span><h3>Oluja</h3><p>Operacija Oluja u kolovozu 1995. bila je ključna vojno-redarstvena operacija u završnoj fazi Domovinskog rata.</p><p class="history-source">Izvor: javno dostupna fotografija · CC0.</p></div></article>
 </div></section>
 
 <section class="content wrap" id="kronologija"><div class="section-head"><div><span class="section-label">KRONOLOGIJA</span><h2>Ključne točke hrvatske povijesti</h2></div><p>Najvažnije prijelomne točke povezane su s posebnim stranicama PatriaSoula gdje se tema može dalje istraživati.</p></div>
@@ -68,15 +94,21 @@
 
 <section class="quote"><div class="wrap"><div class="cross">✝</div><blockquote>„Nauči nas dane naše brojiti, da steknemo mudro srce.”</blockquote><cite>Psalam 90,12</cite></div></section>
 
-<section class="manifest content wrap" id="izvori"><span class="section-label">IZVORI</span><h2>Povijest mora biti <em>provjerljiva.</em></h2><p>PatriaSoul će uz pojedine povijesne teme navoditi korištenu literaturu i institucije kao tekstualnu atribuciju. Posjetitelja ne šaljemo s portala na vanjske stranice; sadržaj i objašnjenje ostaju na PatriaSoulu.</p><div class="lead-grid">
-<article class="lead-card"><span>HRVATSKA ENCIKLOPEDIJA</span><h3>Leksikografski zavod Miroslav Krleža</h3><p>Korišteno za provjeru kronologije, pojmova, osoba i ključnih povijesnih događaja.</p></article>
-<article class="lead-card"><span>DOMOVINSKI RAT</span><h3>Provjerena historiografija i dokumentacija</h3><p>Za ratne teme uspoređujemo enciklopedijske, arhivske, muzejske i dokumentacijske podatke te jasno odvajamo činjenice od svjedočanstava.</p></article>
-<article class="lead-card"><span>PATRIA SOUL</span><h3>Povijest povezana s ostatkom portala</h3><p>Vukovar, Branitelji, Operacije, Spomenici, Baština i Domovina međusobno su povezani kako bi se povijest mogla istraživati unutar portala.</p></article>
+<section class="manifest content wrap" id="izvori"><span class="section-label">IZVORI</span><h2>Povijest mora biti <em>provjerljiva.</em></h2><p>PatriaSoul uz povijesne teme navodi korištenu literaturu, institucije i status slikovne građe kao tekstualnu atribuciju. Posjetitelja ne šaljemo s portala na vanjske stranice; sadržaj i objašnjenje ostaju na PatriaSoulu.</p><div class="lead-grid">
+<article class="lead-card"><span>POVIJESNA GRAĐA</span><h3>Wikimedia Commons</h3><p>Korištene su slike čiji je status na stranici datoteke označen kao public domain, CC0 ili odgovarajuća otvorena licenca.</p></article>
+<article class="lead-card"><span>HRVATSKI SABOR</span><h3>Fotografska građa 30. svibnja 1990.</h3><p>Fotografija konstituiranja prvog demokratski izabranog višestranačkog Sabora pripisana je fotografkinji Nedi Oršolić.</p></article>
+<article class="lead-card"><span>UREĐIVAČKI STANDARD</span><h3>Izvor ostaje na PatriaSoulu</h3><p>Vanjske poveznice nisu dio korisničkog iskustva. Izvori se provjeravaju urednički, a čitatelju se prikazuje relevantna atribucija uz sadržaj.</p></article>
 </div></section>
 
-<section class="content wrap"><div class="lead-grid"><article class="lead-card large"><span>NASTAVAK ISTRAŽIVANJA</span><h3>Povijest nije završena jednom stranicom.</h3><p>Ova stranica je središnja kronologija. Detaljne teme razvijamo zasebno: Domovinski rat, Vukovar, postrojbe, brigade, operacije, spomenike, baštinu i povijest hrvatskih krajeva.</p><a href="/branitelji.html">Nastavi na Branitelje →</a></article><article class="lead-card"><span>DOMOVINA</span><h3>Prostor u kojem se povijest dogodila.</h3><p>Gradovi i krajevi čuvaju tragove povijesti kroz ljude, građevine, običaje i sjećanja.</p><a href="/domovina.html">Istraži Domovinu →</a></article><article class="lead-card"><span>BAŠTINA</span><h3>Ono što ostaje.</h3><p>Materijalna i nematerijalna baština povezuje prošle generacije sa životom danas.</p><a href="/bastina.html">Istraži Baštinu →</a></article></div></section>
+<section class="content wrap"><div class="section-head"><div><span class="section-label">NASTAVI ISTRAŽIVATI</span><h2>Povijest se nastavlja</h2></div><p>Iz povijesti vode putovi prema domovini, braniteljima, baštini i stvarnim mjestima hrvatskoga sjećanja.</p></div><div class="media-grid">
+<a href="/domovina.html"><span>DOMOVINA</span><h3>Hrvatska — jedna zemlja, mnogo priča.</h3><p>Istraži hrvatske krajeve, gradove, prirodu i prostor.</p></a>
+<a href="/branitelji.html"><span>BRANITELJI</span><h3>Sjećanje na obranu Hrvatske.</h3><p>Vukovar, postrojbe, brigade, operacije i spomenici.</p></a>
+<a href="/bastina.html"><span>BAŠTINA</span><h3>Nasljeđe koje živi.</h3><p>Jezik, glagoljica, običaji, glazba, gastronomija i arhitektura.</p></a>
+</div></section>
+
+<section class="content wrap"><div class="cta-grid"><article class="lead-card"><span>O NAMA</span><h3>Zašto PatriaSoul?</h3><p>Gradimo mjesto na kojem hrvatska povijest, baština, sjećanje i znanje ostaju dostupni na jednom mjestu.</p><a href="/o-nama.html">Upoznaj PatriaSoul →</a></article><article class="lead-card"><span>KONTAKT</span><h3>Želiš nešto dodati?</h3><p>Povijesne fotografije, dokumenti i provjerene informacije mogu obogatiti ovu kronologiju.</p><a href="/kontakt.html">Kontaktiraj nas →</a></article></div></section>
 </main>
-<footer><div class="wrap footer-grid"><div><a class="brand" href="/index.html"><span class="brand-patria">PATRIA</span><span class="brand-soul">SOUL</span></a><p>Hrvatska. Povijest. Znanje. Identitet.</p></div><div><b>Domovina</b><a href="/domovina.html">Hrvatska</a><a href="/gradovi.html">Gradovi</a><a href="/krajevi-i-geografija.html">Krajevi i geografija</a><a href="/priroda.html">Priroda</a></div><div><b>Branitelji</b><a href="/branitelji.html">Branitelji</a><a href="/domovinski-rat.html">Domovinski rat</a><a href="/vukovar.html">Vukovar</a><a href="/spomenici.html">Spomenici</a></div><div><b>Povijest i baština</b><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a><a href="/glagoljica.html">Glagoljica</a></div><div><b>Vjera</b><a href="/vjera.html">Vjera</a><a href="/evandelje.html">Evanđelje</a><a href="/molitve.html">Molitve</a></div></div></footer>
-<script src="/assets/js/portal.js" defer></script>
+<footer class="site-footer"><div class="wrap footer-grid"><div><strong>PATRIA SOUL</strong><p>Upoznaj Hrvatsku. Čuvaj baštinu. Prenesi priču.</p></div><div><strong>Istraži</strong><a href="/domovina.html">Domovina</a><a href="/povijest.html">Povijest</a><a href="/branitelji.html">Branitelji</a><a href="/bastina.html">Baština</a></div><div><strong>PatriaSoul</strong><a href="/o-nama.html">O nama</a><a href="/kontakt.html">Kontakt</a><a href="/vjera.html">Vjera</a><a href="/igra.html">Igra</a></div></div><div class="wrap footer-bottom"><span>© PatriaSoul</span><span>Hrvatska · povijest · znanje · identitet</span></div></footer>
+<script src="/assets/js/portal.js"></script>
 </body>
 </html>
