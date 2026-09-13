@@ -1,1 +1,37 @@
-document.addEventListener('DOMContentLoaded',()=>{const track=document.querySelector('.weather-ticker-track');if(!track)return;const cities=['Zagreb','Split','Rijeka','Osijek','Zadar','Pula','Dubrovnik','Šibenik','Varaždin','Karlovac','Slavonski Brod','Knin'];const coords={Zagreb:[45.815,15.982],Split:[43.508,16.44],Rijeka:[45.327,14.442],Osijek:[45.555,18.695],Zadar:[44.119,15.232],Pula:[44.866,13.849],Dubrovnik:[42.65,18.094],Šibenik:[43.735,15.895],Varaždin:[46.305,16.337],Karlovac:[45.492,15.556],"Slavonski Brod":[45.16,18.016],Knin:[44.04,16.197]};const make=(city,temp)=>{const a=document.createElement('a');a.className='weather-ticker-item';a.href='/hrvatska-danas.html#vrijeme';a.innerHTML=`<span class="weather-city">${city}</span><strong>${temp}°C</strong>`;return a};const load=async()=>{track.innerHTML='<span class="weather-ticker-status">Učitavanje vremena…</span>';try{const lats=cities.map(c=>coords[c][0]).join(',');const lons=cities.map(c=>coords[c][1]).join(',');const url=`https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${lons}&current=temperature_2m&timezone=Europe%2FZagreb`;const r=await fetch(url);if(!r.ok)throw new Error('weather');const data=await r.json();const rows=Array.isArray(data)?data:[data];track.innerHTML='';cities.forEach((city,i)=>{const t=rows[i]?.current?.temperature_2m;if(typeof t==='number')track.appendChild(make(city,Math.round(t)))});if(!track.children.length)throw new Error('empty');const copy=track.innerHTML;track.insertAdjacentHTML('beforeend',copy);track.insertAdjacentHTML('beforeend',copy)}catch(e){track.innerHTML='<a class="weather-ticker-item" href="/hrvatska-danas.html#vrijeme"><span class="weather-city">Vrijeme u Hrvatskoj</span><strong>Otvori prognozu →</strong></a>'}};load();setInterval(load,600000);});
+document.addEventListener('DOMContentLoaded',()=>{
+  const ticker=document.querySelector('.weather-ticker');
+  const track=document.querySelector('.weather-ticker-track');
+  if(!ticker||!track)return;
+
+  // Vremenska traka je prvi vizualni element naslovnice.
+  const body=document.body;
+  const topline=document.querySelector('.topline');
+  if(topline) topline.insertAdjacentElement('afterend',ticker);
+  else body.insertBefore(ticker,body.firstChild);
+
+  const cities=['Zagreb','Split','Rijeka','Osijek','Zadar','Pula','Dubrovnik','Šibenik','Varaždin','Karlovac','Slavonski Brod','Knin'];
+  const coords={Zagreb:[45.815,15.982],Split:[43.508,16.44],Rijeka:[45.327,14.442],Osijek:[45.555,18.695],Zadar:[44.119,15.232],Pula:[44.866,13.849],Dubrovnik:[42.65,18.094],Šibenik:[43.735,15.895],Varaždin:[46.305,16.337],Karlovac:[45.492,15.556],'Slavonski Brod':[45.16,18.016],Knin:[44.04,16.197]};
+  const make=(city,temp)=>{const a=document.createElement('a');a.className='weather-ticker-item';a.href='/hrvatska-danas.html#vrijeme';a.innerHTML=`<span class="weather-city">${city}</span><strong>${temp}°C</strong>`;return a};
+  const load=async()=>{
+    track.innerHTML='<span class="weather-ticker-status">Učitavanje vremena…</span>';
+    try{
+      const lats=cities.map(c=>coords[c][0]).join(',');
+      const lons=cities.map(c=>coords[c][1]).join(',');
+      const url=`https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${lons}&current=temperature_2m&timezone=Europe%2FZagreb`;
+      const r=await fetch(url);
+      if(!r.ok)throw new Error('weather');
+      const data=await r.json();
+      const rows=Array.isArray(data)?data:[data];
+      track.innerHTML='';
+      cities.forEach((city,i)=>{const t=rows[i]?.current?.temperature_2m;if(typeof t==='number')track.appendChild(make(city,Math.round(t)))});
+      if(!track.children.length)throw new Error('empty');
+      const copy=track.innerHTML;
+      track.insertAdjacentHTML('beforeend',copy);
+      track.insertAdjacentHTML('beforeend',copy);
+    }catch(e){
+      track.innerHTML='<a class="weather-ticker-item" href="/hrvatska-danas.html#vrijeme"><span class="weather-city">Vrijeme u Hrvatskoj</span><strong>Otvori prognozu →</strong></a>';
+    }
+  };
+  load();
+  setInterval(load,600000);
+});
