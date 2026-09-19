@@ -11,3 +11,106 @@ body:has(.hero a[href="#prostor"]) .manifest:after{content:"Blago narodu kojemu 
 @media(max-width:650px){body:has(.hero a[href="#prostor"]) .hero{min-height:460px}body:has(.hero a[href="#prostor"]) .manifest:after{font-size:21px;padding:24px 18px}}
 
 .footer-standard{display:inline-block;margin-top:10px;color:#c9152b!important;font-size:12px;font-weight:900}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-top:1px solid #293244;color:#9ca8b8;font-size:11px}@media(max-width:1000px){.main-nav{gap:8px}.main-nav>a,.nav-dropdown>a{font-size:12px}.header-actions{display:none}}@media(max-width:650px){.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:5px}.nav-dropdown{height:auto;display:block}.nav-submenu{position:static;box-shadow:none;border-top:0;margin:4px 0 6px;display:none}.nav-dropdown.open .nav-submenu{display:block}.nav-dropdown-toggle{float:right;margin-top:-28px}.main-nav{max-height:calc(100vh - 90px);overflow:auto}}
+
+/* =========================================================
+   PATRIASOUL EDITORIAL PORTAL — HOMEPAGE V2
+   Struktura inspirirana klasičnim editorial/news portalima,
+   ali s vlastitim PatriaSoul identitetom.
+   ========================================================= */
+.portal-subnav{background:#fff;border-bottom:1px solid #e3e6ea}
+.portal-subnav-inner{display:flex;align-items:center;gap:20px;min-height:42px;overflow:auto;white-space:nowrap}
+.portal-subnav a{font-size:11px;font-weight:800;color:#4b5563;text-decoration:none}
+.portal-subnav a:hover{color:#c9152b}
+.subnav-label{font-size:10px;font-weight:900;letter-spacing:1.5px;color:#c9152b}
+.portal-masthead{background:#111827;color:#fff;padding:56px 0 52px;border-bottom:4px solid #c9152b}
+.portal-kicker{font-size:10px;font-weight:900;letter-spacing:2px;color:#e9aeb7;margin:0 0 12px}
+.portal-masthead h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-2px;margin:0 0 18px}
+.portal-masthead h1 em{font-style:normal;color:#d21f39}
+.portal-intro{max-width:780px;color:#d4dbe5;font-size:17px;margin:0}
+.portal-section{padding:48px 0;background:#f7f7f6}
+.portal-section:nth-of-type(even){background:#fff}
+.section-bar{display:flex;justify-content:space-between;align-items:end;gap:20px;border-bottom:2px solid #171a20;padding-bottom:12px;margin-bottom:22px}
+.section-bar h2{font-family:Georgia,serif;font-size:32px;line-height:1.05;margin:5px 0 0;letter-spacing:-.5px}
+.section-bar>a{font-size:11px;font-weight:900;color:#c9152b;text-decoration:none;white-space:nowrap}
+.latest-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #d9dde2;border-left:1px solid #d9dde2}
+.latest-item{padding:20px;border-right:1px solid #d9dde2;border-bottom:1px solid #d9dde2;background:#fff}
+.latest-item time{font-size:9px;font-weight:900;letter-spacing:1.4px;color:#c9152b}
+.latest-item h3{font-size:18px;line-height:1.22;margin:9px 0}
+.latest-item p{font-size:12px;color:#667085;margin:0}
+.featured-section{background:#eceff2!important}
+.featured-layout{display:grid;grid-template-columns:1.55fr .75fr;gap:16px}
+.featured-main{display:grid;grid-template-columns:1.05fr .95fr;background:#fff;border:1px solid #d9dde2;min-height:360px}
+.featured-image{min-height:360px;background:linear-gradient(135deg,#101827,#4b1522),url('/assets/images/hrvatska-sahovnica%20domovina%20hero.jpg') center/cover;position:relative}
+.featured-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0000,#0006)}
+.featured-copy{padding:30px;display:flex;flex-direction:column;justify-content:center}
+.story-tag,.featured-side span,.category-grid span,.dark-story-grid span,.memory-main>span,.heritage-grid span,.people-grid span{font-size:9px;font-weight:900;letter-spacing:1.4px;color:#c9152b}
+.featured-copy h3{font-family:Georgia,serif;font-size:31px;line-height:1.08;margin:11px 0}
+.featured-copy p{font-size:14px;color:#596273}
+.story-link{display:inline-block;margin-top:auto;color:#c9152b;font-size:11px;font-weight:900;text-decoration:none}
+.featured-side{display:grid;gap:16px}
+.featured-side article{background:#111827;color:#fff;padding:26px;border-top:3px solid #c9152b}
+.featured-side h3{font-family:Georgia,serif;font-size:22px;line-height:1.15;margin:10px 0}
+.featured-side p{font-size:12px;color:#b9c3d0;margin:0}
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.category-grid article,.heritage-grid article,.people-grid article{background:#fff;border:1px solid #dfe3e8;padding:24px;min-height:210px;display:flex;flex-direction:column}
+.category-grid h3,.heritage-grid h3,.people-grid h3{font-family:Georgia,serif;font-size:23px;line-height:1.12;margin:10px 0}
+.category-grid p,.heritage-grid p,.people-grid p{font-size:13px;color:#667085;margin:0 0 18px}
+.category-grid a,.people-grid a{margin-top:auto;color:#c9152b;text-decoration:none;font-size:11px;font-weight:900}
+.portal-dark{background:#111827!important;color:#fff}
+.portal-dark .section-bar{border-color:#394556}
+.portal-dark .section-bar h2{color:#fff}
+.portal-dark .section-bar>a{color:#ef9eaa}
+.dark-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#344052}
+.dark-story-grid article{background:#182231;padding:27px;min-height:230px;display:flex;flex-direction:column}
+.dark-story-grid h3{font-family:Georgia,serif;font-size:24px;line-height:1.1;margin:11px 0}
+.dark-story-grid p{font-size:13px;color:#b7c1cf}
+.dark-story-grid a{margin-top:auto;color:#f0a3ad;text-decoration:none;font-size:11px;font-weight:900}
+.memory-section{background:#f0eee9!important}
+.memory-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}
+.memory-main{background:#fff;border-left:5px solid #c9152b;border-top:1px solid #ddd8ce;border-right:1px solid #ddd8ce;border-bottom:1px solid #ddd8ce;padding:32px;min-height:310px;display:flex;flex-direction:column}
+.memory-main h3{font-family:Georgia,serif;font-size:36px;line-height:1.08;margin:12px 0}
+.memory-main p{font-size:15px;color:#596273;max-width:680px}
+.memory-main a{margin-top:auto;color:#c9152b;text-decoration:none;font-size:11px;font-weight:900}
+.memory-list{display:grid;gap:8px}
+.memory-list a{background:#fff;border:1px solid #ddd8ce;padding:18px;text-decoration:none;color:#171a20;display:flex;flex-direction:column}
+.memory-list b{font-family:Georgia,serif;font-size:18px}
+.memory-list span{font-size:11px;color:#7a8494;margin-top:3px}
+.heritage-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.heritage-grid article{min-height:190px}
+.people-section{background:#fff!important}
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.people-grid article{min-height:205px}
+.today-section{background:#111827!important;color:#fff}
+.today-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#374151}
+.today-grid>div{background:#182231;padding:32px;min-height:220px}
+.today-grid h2{font-family:Georgia,serif;font-size:31px;margin:8px 0}
+.today-grid p{color:#b9c3d0;font-size:13px;max-width:520px}
+.today-grid .story-link{margin-top:10px;color:#f0a3ad}
+.archive-section{background:#eceff2!important}
+.archive-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.archive-grid a{background:#fff;border:1px solid #d9dde2;padding:21px;text-decoration:none;color:#171a20;display:flex;flex-direction:column;min-height:125px}
+.archive-grid b{font-family:Georgia,serif;font-size:17px}
+.archive-grid span{font-size:11px;color:#667085;margin-top:5px}
+@media(max-width:1000px){
+  .latest-grid{grid-template-columns:repeat(2,1fr)}
+  .featured-layout,.memory-layout{grid-template-columns:1fr}
+  .featured-main{grid-template-columns:1fr}
+  .featured-image{min-height:280px}
+  .category-grid,.dark-story-grid,.people-grid{grid-template-columns:1fr 1fr}
+  .heritage-grid{grid-template-columns:1fr 1fr}
+  .archive-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .portal-subnav-inner{gap:14px}
+  .portal-masthead{padding:42px 0}
+  .portal-masthead h1{font-size:43px}
+  .portal-intro{font-size:15px}
+  .portal-section{padding:38px 0}
+  .section-bar{align-items:start}
+  .section-bar h2{font-size:27px}
+  .latest-grid,.category-grid,.dark-story-grid,.heritage-grid,.people-grid,.today-grid,.archive-grid{grid-template-columns:1fr}
+  .featured-copy{padding:24px}
+  .featured-copy h3{font-size:27px}
+  .memory-main{padding:25px}
+  .memory-main h3{font-size:30px}
+}
